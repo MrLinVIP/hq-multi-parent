@@ -39,7 +39,7 @@ zuul:
     max-semaphores: 10000
   routes:
     customer:
-      path: /customer/**
+      path: /acustomer/**
       serviceId: hq-multi-customer
 
 
