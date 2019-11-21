@@ -50,6 +50,7 @@
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>1.4.6.RELEASE</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>

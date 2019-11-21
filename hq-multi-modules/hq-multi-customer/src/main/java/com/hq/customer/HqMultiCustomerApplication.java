@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableHystrix
+
 public class HqMultiCustomerApplication {
 
 	public static void main(String[] args) {

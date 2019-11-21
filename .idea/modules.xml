@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-modules/hq-multi-customer/hq-multi-customer.iml" filepath="$PROJECT_DIR$/hq-multi-modules/hq-multi-customer/hq-multi-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-eureka/hq-multi-eureka.iml" filepath="$PROJECT_DIR$/hq-multi-eureka/hq-multi-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-eureka2/hq-multi-eureka2.iml" filepath="$PROJECT_DIR$/hq-multi-eureka2/hq-multi-eureka2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-gateway/hq-multi-gateway.iml" filepath="$PROJECT_DIR$/hq-multi-gateway/hq-multi-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-modules/hq-multi-modules.iml" filepath="$PROJECT_DIR$/hq-multi-modules/hq-multi-modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hq-multi-parent.iml" filepath="$PROJECT_DIR$/.idea/hq-multi-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-modules/hq-multi-provider/hq-multi-provider.iml" filepath="$PROJECT_DIR$/hq-multi-modules/hq-multi-provider/hq-multi-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hq-multi-modules/hq-multi-provider2/hq-multi-provider2.iml" filepath="$PROJECT_DIR$/hq-multi-modules/hq-multi-provider2/hq-multi-provider2.iml" />
     </modules>
   </component>
 </project>

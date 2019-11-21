@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hq-multi-customer" />
+        <module name="hq-multi-eureka" />
+        <module name="hq-multi-eureka2" />
+        <module name="hq-multi-gateway" />
+        <module name="hq-multi-modules" />
+        <module name="hq-multi-provider" />
+        <module name="hq-multi-provider2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hq-multi-customer" target="1.8" />
+      <module name="hq-multi-eureka" target="1.8" />
+      <module name="hq-multi-eureka2" target="1.8" />
+      <module name="hq-multi-gateway" target="1.8" />
+      <module name="hq-multi-modules" target="1.5" />
+      <module name="hq-multi-parent" target="1.5" />
+      <module name="hq-multi-provider" target="1.8" />
+      <module name="hq-multi-provider2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
