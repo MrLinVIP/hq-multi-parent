@@ -3,9 +3,20 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@localhost:8001/eureka/,http://root:123456@localhost:8002/eureka/
+      defaultZone: http://noa:noa@10.0.98.225:8888/eureka/,http://noa:noa@10.0.98.226:8888/eureka/
+      # 缓存清单每隔30秒跟新一次
+    registry-fetch-interval-seconds: 10
   instance:
+    # 实例使用ip进行访问
     prefer-ip-address: true
+    # 实例显示id
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+    # 服务续约任务调用间隔时间，默认30秒
+    lease-renewal-interval-in-seconds: 2
+    # 服务失效时间，默认90秒
+    lease-expiration-duration-in-seconds: 5
+    #状态页面和健康指标
+    statusPageUrlPath: //swagger-ui.html
 spring:
   application:
     name: hq-multi-gateway
