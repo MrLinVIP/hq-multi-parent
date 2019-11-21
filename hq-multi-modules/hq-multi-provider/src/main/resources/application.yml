@@ -1,0 +1,15 @@
+server:
+  port: 8011
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: hq-multi-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/,http://root:123456@localhost:8002/eureka/
+ribbon:
+  eureka:
+    enabled: true
+

@@ -1,0 +1,17 @@
+server:
+  port: 8013
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: hq-multi-customer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/,http://root:123456@localhost:8002/eureka/
+  instance:
+    hostname: hq-multi-customer
+##开启断路器
+feign:
+  hystrix:
+    enabled: true

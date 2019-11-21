@@ -1,0 +1,27 @@
+server:
+  port: 8003
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8001/eureka/,http://root:123456@localhost:8002/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: hq-multi-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+       - id: hq_multi_customer
+         uri: lb://hq-multi-customer
+         predicates:
+         - Path= /customer/**
+         filters:
+         - StripPrefix=1
+
+
+
