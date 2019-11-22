@@ -1,0 +1,17 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: hq-multi-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://10.0.98.7:8080/linliangkun/hq-multi-parent.git
+           # 相对搜索位置，可配置多个
+          search-paths: hq-multi-config/src/main/resources/**
+          username: readonly
+          password: readonly
+          default-label: test
+          clone-on-start: true
+          force-pull: true

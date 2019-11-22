@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hq-multi-config" />
         <module name="hq-multi-customer" />
         <module name="hq-multi-eureka" />
         <module name="hq-multi-eureka2" />
@@ -16,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hq-multi-config" target="1.8" />
       <module name="hq-multi-customer" target="1.8" />
       <module name="hq-multi-eureka" target="1.8" />
       <module name="hq-multi-eureka2" target="1.8" />

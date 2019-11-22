@@ -8,7 +8,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://noa:noa@10.0.98.225:8888/eureka/,http://noa:noa@10.0.98.226:8888/eureka/
+      defaultZone: http://root:123456@localhost:8001/eureka/,http://root:123456@localhost:8002/eureka/
   instance:
     # 实例使用ip进行访问
     prefer-ip-address: true
