@@ -7,7 +7,8 @@
         <option value="$PROJECT_DIR$/hq-multi-modules/hq-multi-provider/pom.xml" />
         <option value="$PROJECT_DIR$/hq-multi-modules/hq-multi-customer/pom.xml" />
         <option value="$PROJECT_DIR$/hq-multi-modules/hq-multi-provider2/pom.xml" />
-        <option value="$PROJECT_DIR$/hq-multi-config/pom.xml" />
+        <option value="$PROJECT_DIR$/hq-multi-common/hq-multi-generator2/pom.xml" />
+        <option value="$PROJECT_DIR$/hq-multi-generator/pom.xml" />
       </list>
     </option>
   </component>

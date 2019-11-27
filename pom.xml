@@ -3,100 +3,136 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <packaging>pom</packaging>
     <modules>
         <module>hq-multi-eureka</module>
         <module>hq-multi-eureka2</module>
         <module>hq-multi-modules</module>
         <module>hq-multi-gateway</module>
+        <module>hq-multi-common</module>
+
     </modules>
 
     <groupId>com.hq.multi</groupId>
     <artifactId>hq-multi-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!--<modules>-->
-        <!--<module>hq-multi-eureka</module>-->
-    <!--</modules>-->
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <mybatis.spring.boot.version>1.3.1</mybatis.spring.boot.version>
-        <mysql.version>5.1.47</mysql.version>
-        <druid.version>1.1.3</druid.version>
-        <commons.lang.version>2.6</commons.lang.version>
-        <commons.lang3.version>3.8.1</commons.lang3.version>
-        <commons.fileupload.version>1.3.1</commons.fileupload.version>
-        <commons.io.version>2.6</commons.io.version>
-        <commons.codec.version>1.10</commons.codec.version>
-        <commons.configuration.version>1.10</commons.configuration.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
-        <commons-beanutils.version>1.9.3</commons-beanutils.version>
-        <fastjson-version>1.2.47</fastjson-version>
-        <httpclient-version>4.5.2</httpclient-version>
-        <activemq-version>5.7.0</activemq-version>
-        <gson-version>2.8.2</gson-version>
-        <httpmime.version>4.5.2</httpmime.version>
-        <httpClient.version>4.5.2</httpClient.version>
-        <commons-httpclient.version>3.1</commons-httpclient.version>
-        <pageHelper.version>1.2.5</pageHelper.version>
-        <jodd.version>3.9.1</jodd.version>
-        <cglib.version>3.2.5</cglib.version>
-        <shiro.version>1.4.0</shiro.version>
-        <poi.version>3.9</poi.version>
+        <mysql.version>5.1.38</mysql.version>
         <swagger2.version>2.8.0</swagger2.version>
+        <pageHelper.version>1.2.5</pageHelper.version>
         <mapper-module.version>1.1.5</mapper-module.version>
         <mapper-weekend.version>1.1.5</mapper-weekend.version>
-        <mybatis.version>3.4.6</mybatis.version>
-        <mybatis-spring.version>1.3.2</mybatis-spring.version>
-        <mybatis.generator.version>1.3.5</mybatis.generator.version>
-        <elasticsearch.version>6.3.2</elasticsearch.version>
         <tk.mybatis.version>2.0.1</tk.mybatis.version>
-        <tk.mybatis.autoconfigure.version>2.1.5</tk.mybatis.autoconfigure.version>
-        <lombok.version>1.16.22</lombok.version>
-        <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
-        <redisson.version>3.7.0</redisson.version>
-        <junit.version>4.12</junit.version>
-        <mockito-core.version>2.28.2</mockito-core.version>
-        <suixingpay.config.client>1.2.0</suixingpay.config.client>
+        <mybatis.spring.boot.version>1.3.1</mybatis.spring.boot.version>
+        <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
+        <jodd.version>3.9.1</jodd.version>
     </properties>
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.yml</include>
-                </includes>
-            </resource>
-        </resources>
-        <plugins>
-            <!-- 跳过单元测试 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!--fork : 如果没有该项配置，devtools不会起作用，即应用不会restart -->
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-        </plugins>
-        <finalName>${project.name}</finalName>
-    </build>
+
+    <!-- SpringCloud-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- SpringBoot配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- 引入spring cloud的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.22</version>
+            <optional>true</optional>
+        </dependency>
+        <!-- swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+
+
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>

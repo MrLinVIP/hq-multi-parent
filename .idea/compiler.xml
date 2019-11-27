@@ -6,24 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hq-multi-config" />
+        <module name="hq-multi-common" />
         <module name="hq-multi-customer" />
         <module name="hq-multi-eureka" />
         <module name="hq-multi-eureka2" />
         <module name="hq-multi-gateway" />
-        <module name="hq-multi-modules" />
+        <module name="hq-multi-generator" />
         <module name="hq-multi-provider" />
         <module name="hq-multi-provider2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hq-common-generator" target="1.5" />
+      <module name="hq-multi-common" target="1.8" />
       <module name="hq-multi-config" target="1.8" />
       <module name="hq-multi-customer" target="1.8" />
       <module name="hq-multi-eureka" target="1.8" />
       <module name="hq-multi-eureka2" target="1.8" />
       <module name="hq-multi-gateway" target="1.8" />
-      <module name="hq-multi-modules" target="1.5" />
-      <module name="hq-multi-parent" target="1.5" />
+      <module name="hq-multi-generator" target="1.8" />
+      <module name="hq-multi-modules" target="1.8" />
+      <module name="hq-multi-parent" target="1.8" />
       <module name="hq-multi-provider" target="1.8" />
       <module name="hq-multi-provider2" target="1.8" />
     </bytecodeTargetLevel>

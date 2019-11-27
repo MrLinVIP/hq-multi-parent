@@ -1,6 +1,7 @@
 package com.hq.customer.controller;
 
 import com.hq.customer.fegin.ProviderService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/customer")
+@Slf4j
 public class CustomerController {
     @Autowired
     private ProviderService providerService;
@@ -25,7 +27,7 @@ public class CustomerController {
     }
     @RequestMapping("/test2")
     public String test2() {
-
+        //log.error("调用了一下");
         return providerService.test();
 
     }
