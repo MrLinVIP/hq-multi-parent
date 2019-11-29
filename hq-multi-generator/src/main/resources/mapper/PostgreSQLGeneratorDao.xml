@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.hq.multi.hqmultigenerator.dao.PostgreSQLGeneratorDao">
+<mapper namespace="com.hq.multi.dao.PostgreSQLGeneratorDao">
 	<resultMap id="tableMap" type="map">
-		<com.hq.multi.result column="tablename" property="tableName"></com.hq.multi.result>
-		<com.hq.multi.result column="tablecomment" property="tableComment"></com.hq.multi.result>
-		<com.hq.multi.result column="columnname" property="columnName"></com.hq.multi.result>
-		<com.hq.multi.result column="datatype" property="dataType"></com.hq.multi.result>
-		<com.hq.multi.result column="columncomment" property="columnComment"></com.hq.multi.result>
-		<com.hq.multi.result column="columnkey" property="columnKey"></com.hq.multi.result>
-		<com.hq.multi.result column="extra" property="extra"></com.hq.multi.result>
-		<com.hq.multi.result column="createtime" property="createTime"></com.hq.multi.result>
+		<result column="tablename" property="tableName"></result>
+		<result column="tablecomment" property="tableComment"></result>
+		<result column="columnname" property="columnName"></result>
+		<result column="datatype" property="dataType"></result>
+		<result column="columncomment" property="columnComment"></result>
+		<result column="columnkey" property="columnKey"></result>
+		<result column="extra" property="extra"></result>
+		<result column="createtime" property="createTime"></result>
 	</resultMap>
 
 	<select id="queryList" resultMap="tableMap">

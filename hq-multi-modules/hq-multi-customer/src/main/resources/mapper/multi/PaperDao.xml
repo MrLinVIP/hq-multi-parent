@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hq.multi.dao.PaperDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.hq.multi.entity.PaperEntity" id="paperMap">
+        <result property="id" column="id"/>
+        <result property="code" column="code"/>
+        <result property="uuid" column="uuid"/>
+        <result property="paperName" column="paper_name"/>
+        <result property="maxTime" column="max_time"/>
+        <result property="amount" column="amount"/>
+        <result property="diffcult" column="diffcult"/>
+        <result property="courseinfoCode" column="courseinfo_code"/>
+        <result property="charpterCode" column="charpter_code"/>
+        <result property="knowledgePointCode" column="knowledge_point_code"/>
+        <result property="knowledgePointNames" column="knowledge_point_names"/>
+        <result property="remark" column="remark"/>
+        <result property="areaName" column="area_name"/>
+        <result property="usedType" column="used_type"/>
+        <result property="startTime" column="start_time"/>
+        <result property="endTime" column="end_time"/>
+        <result property="createTime" column="create_time"/>
+        <result property="isdelete" column="isdelete"/>
+        <result property="isuse" column="isuse"/>
+        <result property="subjectIdList" column="subject_id_list"/>
+        <result property="isfixed" column="isfixed"/>
+        <result property="proId" column="pro_id"/>
+        <result property="isMmUsed" column="is_mm_used"/>
+        <result property="majorMid" column="major_mid"/>
+        <result property="majorMname" column="major_mname"/>
+        <result property="courseMid" column="course_mid"/>
+        <result property="courseMname" column="course_mname"/>
+        <result property="lessonId" column="lesson_id"/>
+        <result property="lessonName" column="lesson_name"/>
+        <result property="classplanId" column="classplan_id"/>
+        <result property="isForcePg" column="is_force_pg"/>
+        <result property="examTimes" column="exam_times"/>
+        <result property="createUserId" column="create_user_id"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="isLook" column="is_look"/>
+    </resultMap>
+
+
+</mapper>

@@ -9,7 +9,6 @@
         <module name="hq-multi-common" />
         <module name="hq-multi-customer" />
         <module name="hq-multi-eureka" />
-        <module name="hq-multi-eureka2" />
         <module name="hq-multi-gateway" />
         <module name="hq-multi-generator" />
         <module name="hq-multi-provider" />

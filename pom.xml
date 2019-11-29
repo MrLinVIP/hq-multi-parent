@@ -12,7 +12,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>hq-multi-eureka</module>
-        <module>hq-multi-eureka2</module>
         <module>hq-multi-modules</module>
         <module>hq-multi-gateway</module>
         <module>hq-multi-common</module>
