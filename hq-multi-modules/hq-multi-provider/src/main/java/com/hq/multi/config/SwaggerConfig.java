@@ -1,5 +1,6 @@
 package com.hq.multi.config;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -41,7 +42,7 @@ public class SwaggerConfig {
                 .directModelSubstitute(LocalTime.class, String.class)
                 .directModelSubstitute(ZonedDateTime.class, String.class)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                 .build();
     }

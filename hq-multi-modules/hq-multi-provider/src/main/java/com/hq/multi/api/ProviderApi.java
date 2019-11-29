@@ -7,12 +7,13 @@ import com.hq.multi.entity.PaperEntity;
 import com.hq.multi.result.R;
 import com.hq.multi.service.PaperService;
 import com.hq.multi.utils.RedisUtils;
-import net.bytebuddy.asm.Advice;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * @author linliangkun

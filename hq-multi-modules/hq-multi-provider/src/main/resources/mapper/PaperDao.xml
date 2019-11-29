@@ -42,5 +42,8 @@
         <result property="isLook" column="is_look"/>
     </resultMap>
 
+    <select id="listMyPapers" resultMap="paperMap">
+      select * from paper where paper_name = CONCAT('%',#{paperName},'%')
+    </select>
 
 </mapper>

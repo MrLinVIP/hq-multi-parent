@@ -2527,3 +2527,16 @@ java.util.concurrent.TimeoutException: null
 2019-11-29 16:18:58.555 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
 2019-11-29 16:23:58.563 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
 2019-11-29 16:28:58.571 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:33:58.579 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:38:58.587 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:43:58.595 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:48:58.603 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:53:58.611 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 16:58:58.619 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:03:58.628 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:08:58.636 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:13:58.645 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:18:58.653 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:23:58.662 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:28:58.670 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
+2019-11-29 17:33:58.683 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.s.r.aws.ConfigClusterResolver:43] - getClusterEndpoints() - Resolving eureka endpoints via configuration 
